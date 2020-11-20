@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cd9e325e2e53408ba3770946a9f7a301" Name="Diagram1">
+        <EntityTypeShape EntityType="Warehouse_DBModel.Category" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Warehouse_DBModel.Currency" Width="1.5" PointX="0.5" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Warehouse_DBModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Warehouse_DBModel.Warehouse" Width="1.5" PointX="5.625" PointY="4.5" IsExpanded="true" />
+        <AssociationConnector Association="Warehouse_DBModel.FK__Product__Categor__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="Warehouse_DBModel.FK__Product__Currenc__2B3F6F97" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Warehouse_DBModel.In_warehouse" Width="1.5" PointX="7.125" PointY="0.5" />
+        <AssociationConnector Association="Warehouse_DBModel.FK__In_wareho__Produ__4E88ABD4" />
+        <AssociationConnector Association="Warehouse_DBModel.FK__In_wareho__Wareh__4D94879B" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

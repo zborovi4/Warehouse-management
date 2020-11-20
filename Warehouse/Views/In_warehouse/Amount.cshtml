@@ -1,0 +1,24 @@
+﻿@model SelectList
+@{
+    ViewBag.Title = "Amount";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>Amount</h2>
+<div>
+    @using (Html.BeginForm("CalculateAmount", "In_warehouse", FormMethod.Post))
+    { 
+        <input type="hidden" value="@ViewBag.Wh_id" name="wh_id"/>
+
+        @Html.DropDownList("id", Model, new { id = "currency" })
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" id="submit" value="Calculate" class="btn btn-default" />
+            </div>
+        </div>
+    }    
+</div>
+
+
